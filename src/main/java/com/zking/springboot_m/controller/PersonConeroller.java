@@ -13,6 +13,7 @@ public class PersonConeroller {
     @RequestMapping("add")
     public String add(UserEntity entity){
         userDao.userAdd(entity);
+        System.out.println("ssssssssssds");
         return "add success";
     }
 }
